@@ -24,3 +24,4 @@ function hayGanador(tablero){
         return tablero [0][2] === 'x' ? 'Gano cruz' : 'Gano circulo'
     }
 }
+alert(hayGanador(tablero))
