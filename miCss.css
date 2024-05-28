@@ -1,7 +1,65 @@
 body {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    width: 320px;
+    /* Si quiero tres celdas por fila hago cada una de 100px + dos gaps de 10px c/u */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    flex-flow: row wrap;
+}
+
+.cell {
+    width: 100px;
+    text-align: center;
+}
+
+#cell-0,
+#cell-1,
+#cell-3,
+#cell-4,
+#cell-6,
+#cell-7 {
+    border-right: 1px solid black;
+}
+
+#cell-0,
+#cell-1,
+#cell-2,
+#cell-3,
+#cell-4,
+#cell-5 {
+    border-bottom: 1px solid black;
+}
+
+
+.cell:hover {
+    background-color: rgb(146, 146, 146);
+    cursor: pointer;
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(243, 81, 32);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button:hover {
     cursor: pointer;
+    background-color: rgb(243, 81, 32);
+    border: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
 }
